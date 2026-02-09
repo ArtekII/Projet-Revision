@@ -59,3 +59,19 @@ CREATE TABLE echange(
     FOREIGN KEY (id_objet1) REFERENCES objet(id),
     FOREIGN KEY (id_objet2) REFERENCES objet(id)
 );
+
+-- ==========================================
+-- Données de test pour les catégories
+-- ==========================================
+INSERT INTO categorie (nom) VALUES 
+    ('Électronique'),
+    ('Vêtements'),
+    ('Livres'),
+    ('DVD & Blu-ray'),
+    ('Jeux vidéo'),
+    ('Mobilier'),
+    ('Sport & Loisirs'),
+    ('Musique'),
+    ('Jouets'),
+    ('Autres');
+
