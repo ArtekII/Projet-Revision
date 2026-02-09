@@ -60,10 +60,6 @@ CREATE TABLE echange(
     FOREIGN KEY (id_objet2) REFERENCES objet(id)
 );
 
-
-INSERT INTO utilisateur(nom, prenom, email, mot_de_passe) VALUES
-('admin', 'admin', 'admin@gmail.com', '1234');
-
 INSERT INTO categorie (nom) VALUES 
     ('Électronique'),
     ('Vêtements'),
