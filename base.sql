@@ -63,3 +63,16 @@ CREATE TABLE echange(
 
 INSERT INTO utilisateur(nom, prenom, email, mot_de_passe) VALUES
 ('admin', 'admin', 'admin@gmail.com', '1234');
+
+INSERT INTO categorie (nom) VALUES 
+    ('Électronique'),
+    ('Vêtements'),
+    ('Livres'),
+    ('DVD & Blu-ray'),
+    ('Jeux vidéo'),
+    ('Mobilier'),
+    ('Sport & Loisirs'),
+    ('Musique'),
+    ('Jouets'),
+    ('Autres');
+
