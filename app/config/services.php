@@ -1,5 +1,6 @@
 <?php
 
+use app\template\LayoutView;
 use flight\Engine;
 use flight\database\PdoWrapper;
 use flight\debug\database\PdoQueryCapture;
@@ -89,6 +90,10 @@ $dsn = 'mysql:host=' . $config['database']['host'] . ';dbname=' . $config['datab
 // In development, use PdoQueryCapture to log queries; in production, use PdoWrapper for performance.
 $pdoClass = Debugger::$showBar === true ? PdoQueryCapture::class : PdoWrapper::class;
 $app->register('db', $pdoClass, [ $dsn, $config['database']['user'] ?? null, $config['database']['password'] ?? null ]);
+$app->register('view', LayoutView::class, [], function (LayoutView $view) use ($app) {
+	$view->path = $app->get('flight.views.path');
+	$view->extension = $app->get('flight.views.extension');
+});
 
 /**********************************************
  *         Third-Party Integrations           *

@@ -33,7 +33,7 @@ require 'services.php';
 $router = $app->router();
 
 // Routes (safe now)
-require 'routes.php';
+require 'route.php';
 
 // Start app
 $app->start();

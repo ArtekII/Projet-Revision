@@ -44,7 +44,7 @@
                     <hr class="text-white">
                     <ul class="nav nav-pills flex-column mb-auto">
                         <li class="nav-item">
-                            <a href="<?= BASE_URL ?>/admin" class="nav-link">
+                            <a href="<?= BASE_URL ?>/admin/dashboard" class="nav-link">
                                 <i class="bi bi-speedometer2 me-2"></i>
                                 Tableau de bord
                             </a>
@@ -53,12 +53,6 @@
                             <a href="<?= BASE_URL ?>/admin/categories" class="nav-link <?= strpos($_SERVER['REQUEST_URI'], '/categories') !== false ? 'active' : '' ?>">
                                 <i class="bi bi-tags me-2"></i>
                                 Catégories
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?= BASE_URL ?>/admin/users" class="nav-link">
-                                <i class="bi bi-people me-2"></i>
-                                Utilisateurs
                             </a>
                         </li>
                         <li>
@@ -77,7 +71,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?= BASE_URL ?>/logout" class="nav-link text-danger">
+                            <a href="<?= BASE_URL ?>/admin/logout" class="nav-link text-danger">
                                 <i class="bi bi-box-arrow-right me-2"></i>
                                 Déconnexion
                             </a>
